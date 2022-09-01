@@ -96,3 +96,10 @@ header nav .t-menu {
     margin-left: 5px;
     font-size: 6pt;
 }
+
+/* Gamestreet pasos imagenes */
+
+.img-pasos {
+    max-width: 100%;
+    height: 25rem;
+}
