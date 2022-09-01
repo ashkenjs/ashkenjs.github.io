@@ -103,3 +103,12 @@ header nav .t-menu {
     max-width: 100%;
     height: 25rem;
 }
+
+.btn-bronze {
+    background: rgb(238, 189, 125) ;
+    color: black;
+}
+
+.listalvl {
+    
+}
