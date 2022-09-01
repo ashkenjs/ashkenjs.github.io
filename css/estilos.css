@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Code';
+    scroll-behavior: smooth;
+    scrollbar-color: blue;
+}
+
+body {
+    height: auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background: white;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #2f82ff;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .title {
+    font-size: 25pt;
+    padding: 1rem;
+    font-family: 'Amaranth';
+}
+
+header nav {
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+header nav .t-menu {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.franja {
+    background-color: #2f82ff;
+    padding: 0.5rem;
+}
+
+.franja .resp1 {
+    text-align: center;
+}
+
+.bienvenida {
+    text-align: center;
+    font-family: 'Suez One';
+}
+
+.imagen1 {
+    width: 40rem;
+}
+
+.imagen2 {
+    width: 50rem;
+}
+
+.imagen3 {
+    width: 20rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.parrafo {
+    width: 70%;
+    margin: auto;
+}
+
+.parrafo3 {
+    margin-top: 10%;
+}
+
+.drop {
+    margin-top: 3rem;
+}
+
+.freepik {
+    margin-bottom: 0;
+    position: absolute;
+    margin-left: 5px;
+    font-size: 6pt;
+}
