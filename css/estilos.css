@@ -31,18 +31,27 @@ header {
 header .title {
     font-size: 25pt;
     padding: 1rem;
-    font-family: 'Amaranth';
+    font-family: 'Aquire';
+    text-shadow: 5px 5px 8px rgb(50, 50, 50);
+}
+
+header .path-header {
+    margin: auto;
+    max-width: 4rem;
+    margin-top: 1rem;
 }
 
 header nav {
     padding: 1rem;
     margin-right: 2rem;
+    
 }
 
 header nav .t-menu {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     text-decoration: none;
+    font-family: 'Rubik';
 }
 
 .franja {
@@ -57,6 +66,7 @@ header nav .t-menu {
 .bienvenida {
     text-align: center;
     font-family: 'Suez One';
+    text-shadow: 5px 5px 8px rgb(50, 50, 50);
 }
 
 .imagen1 {
@@ -95,4 +105,8 @@ header nav .t-menu {
     position: absolute;
     margin-left: 5px;
     font-size: 6pt;
+}
+
+.titulo-body {
+    text-shadow: 5px 5px 8px rgb(50, 50, 50);
 }
