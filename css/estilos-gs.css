@@ -116,6 +116,14 @@ header nav .t-menu {
     border-top: 5px inset rgb(147, 146, 146);
 }
 
+.linktitle {
+    text-decoration: none;
+}
+
+.lintitle:hover {
+    text-decoration: none;
+}
+
 /* Gamestreet pasos imagenes */
 
 .img-pasos {

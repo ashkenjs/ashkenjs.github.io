@@ -114,7 +114,15 @@ header nav .t-menu {
 }
 
 .titulo-body {
-    text-shadow: 5px 5px 8px rgb(50, 50, 50);
+    text-shadow: 5px 5px 8px rgb(118, 116, 116);
+}
+
+.linktitle {
+    text-decoration: none;
+}
+
+.lintitle:hover {
+    text-decoration: none;
 }
 
 .footerlb {
