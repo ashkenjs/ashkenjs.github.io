@@ -14,6 +14,7 @@
 body {
     height: auto;
     overflow-x: hidden;
+    background: rgb(34, 34, 34);
 }
 
 body::-webkit-scrollbar{
@@ -109,6 +110,10 @@ header nav .t-menu {
     position: absolute;
     margin-left: 5px;
     font-size: 6pt;
+}
+
+.footerlb {
+    border-top: 5px inset rgb(147, 146, 146);
 }
 
 /* Gamestreet pasos imagenes */
