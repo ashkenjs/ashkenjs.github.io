@@ -1,214 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!--Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="http://fonts.cdnfonts.com/css/aquire" rel="stylesheet">
-    <!--Fuente google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Concert+One&family=Fira+Code:wght@300;400;500;600;700&family=Suez+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LatinBlood - LandWeb</title>
 
-    <!--Fuente Aquire-->
-    
-                
+  <!-- 
+    - favicon link
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
 
-    <!--Iconos Awesome-->
-    <script src="https://kit.fontawesome.com/d4a5be2fab.js" crossorigin="anonymous"></script>
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Latinblood - PathDao</title>
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <header class="bg-primary bg-gradient">
-        <a href="./index.html" class="linktitle"><div class="title fw-bold text-white fs-1">LatinBlood - PathDao
-        </div></a>
-        <div class="logopath-header">
-          <img src="./img/pathdao-logo-header.png" alt="logo-path" class="image-fluid path-header">
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <!-- 
+      - overlay
+    -->
+    <div class="overlay" data-overlay></div>
+
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/hand-logo.png" alt="hand-logo" class="hand-logo">
+        <img src="./assets/images/logo-img.png" alt="GameX logo" class="logo-text">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-nav>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-img.png" alt="GameX logo">
+          </a>
+
+          <button class="nav-close-btn" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
         </div>
-        <div class="nav">
-            <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient">
-                <div class="container-fluid">
-                  <a class="navbar-brand fs-bold text-white t-menu" href="#">Menu</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLightDropdown" aria-controls="navbarNavLightDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavLightDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold text-white t-menu" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          ¿Quiénes Somos?
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Origen</a></li>
-                          <li><a class="dropdown-item" href="#">Visión</a></li>
-                          <li><a class="dropdown-item" href="#">Reglas</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="collapse navbar-collapse" id="navbarNavLightDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white fw-bold t-menu" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tutoriales
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                          <li><a class="dropdown-item" href="./game-street.html">GameStreet</a></li>
-                          <li><a class="dropdown-item" href="./aplicar-becas.html">Becas</a></li>
-                          <li><a class="dropdown-item" href="./micro-creditos.html">Micro-Prestamos</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="collapse navbar-collapse" id="navbarNavLightDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white fw-bold t-menu" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Juegos
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Karmaverse</a></li>
-                          <li><a class="dropdown-item" href="#">Fancy Birds</a></li>
-                          <li><a class="dropdown-item" href="#">DG Pals</a></li>
-                          <li><a class="dropdown-item" href="#">Castle Crush</a></li>
-                          <li><a class="dropdown-item" href="#">Genopets</a></li>
-                          <li><a class="dropdown-item" href="#">Walken</a></li>
-                          <li><a class="dropdown-item" href="#">RebelBots</a></li>
-                          <li><a class="dropdown-item" href="#">Hero Arena</a></li>
-                          <li><a class="dropdown-item" href="#">LOK - Drago</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </div>
-    </header>
-        <div id="carouselExampleCaptions" class="carousel slide main-car" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active main-car2">
-                <img src="./img/imagen-car1.jpg" class="d-block w-100" alt="test">
-                <div class="carousel-caption d-none d-md-block text-info">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/imagen-car2.png" class="d-block w-100" alt="test">
-                <div class="carousel-caption d-none d-md-block text-black">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/imagen-car3.jpg" class="d-block w-100" alt="test">
-                <div class="carousel-caption d-none d-md-block text-white">
-                  <h5></h5>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Atrás</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#hero" class="navbar-link">Inicio</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">Nosotros</a>
+          </li>
+
+          <li>
+            <a href="#tournament" class="navbar-link">Torneos</a>
+          </li>
+
+          <li>
+            <a href="#team" class="navbar-link">Integrantes</a>
+          </li>
+
+          <li>
+            <a href="#gears" class="navbar-link">Tutoriales</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <!--<button class="btn-sign_in">
+
+          <div class="icon-box">
+            <ion-icon name="log-in-outline"></ion-icon>
           </div>
-    <div class="franja">
-      
-      <h1 class="bienvenida text-white fw-bold">
-        <div class="spinner-grow text-primary" role="status">
-          <span class="visually-hidden"></span>
-        </div>
-        <div class="spinner-grow text-primary" role="status">
-          <span class="visually-hidden"></span>
-        </div>
-        ¡¡Bienvenidos!!
-        <div class="spinner-grow text-primary" role="status">
-          <span class="visually-hidden"></span>
-        </div>
-        <div class="spinner-grow text-primary" role="status">
-          <span class="visually-hidden"></span>
-        </div>
-      </h1>
+
+          <span>Log-in</span>
+
+        </button>-->
+
+      </div>
+
     </div>
-    
-    <main class="container my-4">
-      <div class="row mb-4">
-        <div class="col-md-6 text-center drop">
-            <img class="imagen1 img-fluid shadow border-bottom" src="./img/Imagen-1.jpg" alt="jugadorweb3">
-        </div>
-        <div class="col-md-6 text-center my-auto">
-          <h3 class="fw-bold titulo-body text-primary">Alianza Latina de PathDao</h3>
-          <p class="parrafo text-light">Somos la primera alianza gamer latina dentro de PathDao, integrada por gamers principiantes y profesionales del mundo web3.</p>
-        </div>
-      </div>
 
-      <div class="row drop">
-        <div class="col-md-6 text-center my-auto drop">
-          <h3 class="fw-bold titulo-body text-danger">Integrados al mundo web3</h3>
-          <p class="parrafo text-light">Hemos dado el salto evolutivo y ser participantes de nuevos proyectos de juegos web3, el cual está a la vanguardia y con mucho auge hoy en día.</p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img class="imagen2 img-fluid shadow border-bottom" src="./img/Imagen-2.jpg" alt="jugadorweb3">
-      </div>
-      </div>
+  </header>
 
-      <div class="row my-6 drop">
-        <div class="col-md-6 text-center drop">
-            <img class="imagen3 img-fluid shadow border-bottom" src="./img/Imagen-3.jpg" alt="jugadorweb3">
-        </div>
-        <div class="col-md-6 text-center parrafo3">
-          <h3 class="fw-bold titulo-body text-warning">Becados en juegos nft P2E remunerados</h3>
-          <p class="parrafo text-light">En las becas obtenidas gracias a PathDao podemos obtener remuneraciones tanto en tokens o nft's en distintos juegos que la web3 nos brinda.</p>
-        </div>
-      </div>
-    </main>
 
-    <footer class="bg-dark shadow text-white pt-3 pb-4 footerlb">
-      <div class="container2 text-center text-md-left">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-1">
-            <h5 class="text-uppercase mb-4 fw-bold text-white">LatinBlood</h5>
-            <p>Este sitio web es solo informativo para la alianza latina <span class="fw-bold text-warning">LATINBLOOD</span> formada dentro de la comunidad de <span class="text-primary fw-bold">PATHDAO</span>.</p>
-          </div>
 
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-1">
-            <h5 class="text-uppercase mb-4 fw-bold text-warning">Pathdao</h5>
-            <p>
-              <a href="https://pathdao.io/" class="link-white a-footer"><i class="fa-solid fa-globe"> WEBSITE</i></a>
-            </p>
-            <p>
-              <a href="https://www.facebook.com/PathDAO/" class="link-white a-footer"><i class="fa-brands fa-facebook"> FACEBOOK</i></a>
-            </p>
-            <p>
-              <a href="https://twitter.com/PathDAO" class="link-white a-footer"><i class="fa-brands fa-twitter"> TWITTER</i></a>
-            </p>
-            <p>
-              <a href="https://discord.gg/pathdao" class="link-white a-footer"><i class="fa-brands fa-discord"> DISCORD</i></a>
-            </p>
-          </div>
 
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-1">
-            <h5 class="text-uppercase mb-4 fw-bold text-warning">Créditos</h5>
-            <p>Sitio web fue realizado por <span class="text-success fs-bold">AshkenGX</span> para todos los integrantes de la alianza <span class="text-warning fs-bold"> LatinBlood</span> y que inician el camino en la comunidad de <span class="text-primary fs-bold"> PathDao</span>.</p>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #Boton Principal
+      -->
+
+      <section class="hero" id="hero">
+        <div class="container">
+
+          <p class="hero-subtitle">Gremio Latino en PathDao</p>
+
+          <h1 class="h1 hero-title">LatinBlood</h1>
+
+          <div class="btn-group">
+
+            <button class="btn btn-primary">
+              <span>¡Unete!</span>
+
+              <ion-icon name="play-circle"></ion-icon>
+            </button>
+
+            <button class="btn btn-link">Discord</button>
+
           </div>
 
         </div>
+      </section>
+
+
+
+
+
+      <div class="section-wrapper">
+
+        <!-- 
+          - #Primera noticia nosotros
+        -->
+
+        <section class="about" id="about">
+          <div class="container">
+
+            <figure class="about-banner">
+
+              <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
+
+              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
+
+              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
+
+              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
+
+            </figure>
+
+            <div class="about-content">
+
+              <p class="about-subtitle">Alianza Latina de PathDao</p>
+
+              <h2 class="about-title">Somos la primera alianza gamer latina dentro de <strong>PathDao</strong> </h2>
+
+              <p class="about-text">
+                integrada por gamers principiantes y profesionales del mundo web3, hemos dado el salto evolutivo y ser participantes de nuevos proyectos, yendo siempre a la vanguardia en estos juegos con mucho auge hoy en día.
+              </p>
+
+              <p class="about-bottom-text">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+
+                <span>Nos capacitamos para ser los mejores!</span>
+              </p>
+
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #Segunda Noticia Nosotros
+        -->
+
+       <section class="tournament" id="tournament">
+          <div class="container">
+
+            <figure class="about-banner">
+
+              <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
+
+              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
+
+              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
+
+              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
+
+            </figure>
+
+            <div class="about-content">
+
+              <p class="about-subtitle">Alianza Latina de PathDao</p>
+
+              <h2 class="about-title">Somos la primera alianza gamer latina dentro de <strong>PathDao</strong> </h2>
+
+              <p class="about-text">
+                integrada por gamers principiantes y profesionales del mundo web3, hemos dado el salto evolutivo y ser participantes de nuevos proyectos, yendo siempre a la vanguardia en estos juegos con mucho auge hoy en día.
+              </p>
+
+              <p class="about-bottom-text">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+
+                <span>Nos capacitamos para ser los mejores!</span>
+              </p>
+
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+
+
+        <!-- 
+          - #GALERIA
+        -->
+
+        <section class="gallery">
+          <div class="container">
+
+            <ul class="gallery-list has-scrollbar">
+
+              <li>
+                <figure class="gallery-item">
+                  <img src="./assets/images/gallery-img-1.jpg" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li>
+                <figure class="gallery-item">
+                  <img src="./assets/images/gallery-img-2.jpg" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li>
+                <figure class="gallery-item">
+                  <img src="./assets/images/gallery-img-3.jpg" alt="Gallery image">
+                </figure>
+              </li>
+
+              <li>
+                <figure class="gallery-item">
+                  <img src="./assets/images/gallery-img-4.jpg" alt="Gallery image">
+                </figure>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #Integrantes
+        -->
+
+        <section class="team" id="team">
+          <div class="container">
+
+            <h2 class="h2 section-title">Miembros Activos del Gremio</h2>
+
+            <ul class="team-list">
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-1.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-2.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-3.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-4.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-6.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-7.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-8.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-9.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-10.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-11.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-12.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-13.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="team-member">
+                  <figure>
+                    <img src="./assets/images/team-member-14.png" alt="Team member image">
+                  </figure>
+
+                  <ion-icon name="link-outline"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+            <button class="btn btn-primary">Ver a todos los miembros</button>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #Eventos y torneos
+        -->
+
+        <section class="gears" id="gears">
+          <div class="container">
+
+            <h2 class="h2 section-title">Eventos y Torneos</h2>
+
+            <ul class="gears-list">
+
+              <li>
+                <div class="gears-card">
+
+                  <div class="card-banner">
+
+                    <a href="#">
+                      <img src="./assets/images/gears-img-1.png" alt="Headphone">
+                    </a>
+
+                    <button class="share">
+                      <ion-icon name="share-social"></ion-icon>
+                    </button>
+
+                    <div class="card-time-wrapper">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <span>1 dia</span>
+                    </div>
+
+                  </div>
+
+                  <div class="card-content">
+
+                    <div class="card-title-wrapper">
+
+                      <h3 class="h3 card-title">Fun Run3</h3>
+
+                      <p class="card-subtitle">Competitivo</p>
+
+                    </div>
+
+                    <div class="card-prize">Premio: $Path</div>
+
+                  </div>
+
+                  <div class="card-actions">
+
+                    <button class="btn btn-primary">
+                      <ion-icon name="add-outline"></ion-icon>
+
+                      <span>Alistarme</span>
+                    </button>
+
+                    <button class="btn card-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="gears-card">
+
+                  <div class="card-banner">
+
+                    <a href="#">
+                      <img src="./assets/images/gears-img-2.png" alt="Controller">
+                    </a>
+
+                    <button class="share">
+                      <ion-icon name="share-social"></ion-icon>
+                    </button>
+
+                    <div class="card-time-wrapper">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <span>(No Definido)</span>
+                    </div>
+
+                  </div>
+
+                  <div class="card-content">
+
+                    <div class="card-title-wrapper">
+
+                      <h3 class="h3 card-title">Stumble Guys</h3>
+
+                      <p class="card-subtitle">Competitivo</p>
+
+                    </div>
+
+                    <div class="card-prize">Premio: $Path</div>
+
+                  </div>
+
+                  <div class="card-actions">
+
+                    <button class="btn btn-primary">
+                      <ion-icon name="add-outline"></ion-icon>
+
+                      <span>Alistarme</span>
+                    </button>
+
+                    <button class="btn card-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="gears-card">
+
+                  <div class="card-banner">
+
+                    <a href="#">
+                      <img src="./assets/images/gears-img-3.png" alt="Gaming mask">
+                    </a>
+
+                    <button class="share">
+                      <ion-icon name="share-social"></ion-icon>
+                    </button>
+
+                    <div class="card-time-wrapper">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <span>(No Definido)</span>
+                    </div>
+
+                  </div>
+
+                  <div class="card-content">
+
+                    <div class="card-title-wrapper">
+
+                      <h3 class="h3 card-title">Gartic.io</h3>
+
+                      <p class="card-subtitle">Competitivo</p>
+
+                    </div>
+
+                    <div class="card-prize">Premio: $Path</div>
+
+                  </div>
+
+                  <div class="card-actions">
+
+                    <button class="btn btn-primary">
+                      <ion-icon name="add-outline"></ion-icon>
+
+                      <span>Alistarme</span>
+                    </button>
+
+                    <button class="btn card-btn">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #NEWSLETTER
+        -->
+
+        <section class="newsletter">
+          <div class="container">
+
+            <div class="newsletter-card">
+
+              <div class="newsletter-content">
+                <figure class="newsletter-img">
+                  <img src="./assets/images/newsletter-img.png" alt="Newsletter image">
+                </figure>
+
+                <h2 class="h2 newsletter-title">Suscribete a nuestros newsletter</h2>
+              </div>
+
+              <form action="" class="newsletter-form">
+                <input type="email" name="email" required placeholder="Your Email Address" class="input-field">
+
+                <button type="submit" class="btn btn-secondary">Suscribirse</button>
+              </form>
+
+            </div>
+
+          </div>
+        </section>
+
       </div>
-    </footer>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <div class="footer-menu-wrapper">
+
+            <ul class="footer-menu-list">
+
+              <li>
+                <a href="#hero" class="footer-menu-link">Inicio</a>
+              </li>
+
+              <li>
+                <a href="#about" class="footer-menu-link">Nosotros</a>
+              </li>
+
+              <li>
+                <a href="#tournament" class="footer-menu-link">Torneos</a>
+              </li>
+
+              <li>
+                <a href="#team" class="footer-menu-link">Integrantes</a>
+              </li>
+
+              <li>
+                <a href="#gears" class="footer-menu-link">Tutoriales</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-menu-link">Contacto</a>
+              </li>
+
+            </ul>
+
+            <div class="footer-input-wrapper">
+              <input type="text" name="message" required placeholder="Find Here Now" class="footer-input">
+
+              <button class="btn btn-primary">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer-quicklinks">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-item">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-item">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-item">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-item">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-social-list">
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-discord"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-twitch"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-xbox"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          Copyright &copy; 2022 <a href="#">AshkenGX</a>. all rights reserved
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="btn btn-primary go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </html>
